@@ -3,4 +3,8 @@ project(KIS_Admission)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(KIS_Admission main.cpp)
+include_directories(src)
+
+add_subdirectory(src)
+add_subdirectory(tests)
+add_subdirectory(lib/googletest)
